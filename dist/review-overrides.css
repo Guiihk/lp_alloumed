@@ -1,0 +1,24 @@
+/* Review palette: keep each colored surface paired with a high-contrast text color. */
+:root{--green-review:#00A57C;--orange-review:#FF8C19;--deep-review:#004A5D}
+.thought{background:var(--green-review);color:#fff}
+.thought p,.thought span,.thought b,.thought .timeline>div{color:#fff}
+.thought .timeline-line{background:var(--deep-review)}
+.accessibility{background:var(--deep-review);color:#fff}
+.accessibility h2,.accessibility h2 span,.accessibility p,.accessibility strong,.accessibility .big-price,.accessibility .big-price span,.accessibility .big-price small{color:#fff}
+.accessibility .price-story>div>p:last-child,.accessibility .price-equation>p:last-child{color:#fff!important}
+.accessibility .loyalty-price{color:#fff!important;font-size:18px;margin-top:10px}
+.accessibility .loyalty-price strong{font-weight:600}
+.loyalty-note{display:block;color:#fff;font-size:12px;line-height:1.35;margin-top:4px}
+.accessibility .price-divider{background:rgba(255,255,255,.45)}
+.plan{background:var(--orange-review);color:#fff}
+.plan h3,.plan .plan-sub,.plan .plan-price,.plan .plan-price span,.plan .plan-price small,.plan li,.plan .plan-help{color:#fff}
+.plan .loyalty-price{color:#fff;font-size:15px;line-height:1.4;margin-top:8px}
+.plan .loyalty-price strong{font-weight:600}
+.plan .button{background:var(--deep-review);color:#fff}
+header .button.small,.hero-actions .button{background:var(--green-review);color:#fff}
+.benefit{color:var(--deep)}
+.benefit:nth-child(1){background:var(--mint)}
+.benefit:nth-child(2){background:var(--orange-review)}
+.benefit:nth-child(3){background:#00556B;color:#fff}
+.benefit:nth-child(3) p{color:#fff}
+.trust{display:none!important}

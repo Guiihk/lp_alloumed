@@ -1,3 +1,12 @@
+const query = new URLSearchParams(window.location.search);
+if (query.toString()) {
+  for (const link of document.querySelectorAll('[data-forward-query]')) {
+    const target = new URL(link.href);
+    for (const [key, value] of query) target.searchParams.append(key, value);
+    link.href = target.toString();
+  }
+}
+
 // Content remains visible if the motion library cannot load.
 if (window.gsap && window.ScrollTrigger) {
   gsap.registerPlugin(ScrollTrigger);

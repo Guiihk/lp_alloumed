@@ -4,7 +4,7 @@ Landing page estática. Arquivos publicáveis em `dist/`. Sem formulário, armaz
 
 Identidade conferida no BrandBook Alloumed, abril de 2026: páginas 8 (proteção da marca), 11 (paleta), 15–17 (Bai Jamjuree), 19–20 (linguagem próxima e humana). Logo SVG oficial, com recorte de prancheta e caminhos preservados. Fontes locais, com licença OFL. Verde-água #00E7AD, azul-petróleo #005A71 e #004A5D, cinza quente #E3DEDA. Fotografia ilustrativa gerada pelo imagegen integrado.
 
-O destino de contratação foi atualizado pelo cliente para `https://app.alloumed.com.br/planos`. O texto de apoio do card orienta que dúvidas sejam tratadas com a equipe pelo WhatsApp na próxima tela.
+O destino de contratação foi atualizado pelo cliente para `https://app.alloumed.com.br/planos`. Os CTAs preservam os parâmetros da URL atual, incluindo UTMs, ao encaminhar para a próxima página. O texto de apoio do card orienta que dúvidas sejam tratadas com a equipe pelo WhatsApp na próxima tela.
 
 Informações do programa fornecidas pelo cliente: R$99/mês, duas consultas por mês, intervalo quinzenal, atendimento online com o mesmo psicólogo, sigilo, acolhimento, possibilidade de troca e idade mínima de 6 anos. Sem depoimentos, estatísticas ou perfis profissionais inventados. Duração, cancelamento, reagendamento e renovação não foram informados; FAQ orienta confirmar com a equipe.
 
@@ -12,7 +12,7 @@ Informações do programa fornecidas pelo cliente: R$99/mês, duas consultas por
 
 `node --check dist/app.js`. `qa.cjs` usa o Playwright do runtime local e Chrome instalado para verificar quatro larguras, imagens, overflow, FAQ, CTA visível no desktop, destino do plano, movimento reduzido e erros JavaScript. Iniciar servidor local em `127.0.0.1:4186` servindo `dist/` antes de rodar. Capturas são ignoradas pelo Git.
 
-Sem pixel Meta, Google Ads, analytics ou eventos de conversão: IDs não foram fornecidos. Publicação privada pelo Sites; não é uma página pública de campanha.
+Container Google Tag Manager `GTM-KR3DCSLB` instalado em `dist/index.html`; tags, pixels e eventos devem ser configurados no próprio workspace do GTM. Publicação privada pelo Sites; não é uma página pública de campanha.
 
 ## Prompt da fotografia
 
